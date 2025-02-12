@@ -26,7 +26,7 @@ const RegisterButton = () => {
     return (
         <div className="flex justify-center">
             <a
-                href="https://github.com/ui-layouts/uilayouts"
+                href="https://forms.gle/Cwo2U5mxeE9TrpPi7"
                 target="_blank"
                 className="absolute inline-block sm:w-36 w-28 h-[2.7em] mx-auto group dark:bg-black bg-white dark:border-white border-black border-2 rounded-lg">
                 <div className="absolute w-[112.81%] h-[128.57%] top-[8.57%] left-1/2 -translate-x-1/2 filter blur-[19px] opacity-70">
