@@ -1,14 +1,27 @@
-import './App.css'
+import CountdownTimer from "./components/CountdownTimer"
+import Footer from "./components/Footer"
+import Gallery from "./components/Gallery"
+import Hero from "./components/Hero"
+import ImageCarousel from "./components/NonTech"
+import FuzzyOverlayExample from "./components/Prizes"
+import TechDay1 from "./components/TechEventsDay1"
+import TechDay2 from "./components/TechEventsDay2"
+import Workshops from "./components/WorkShop"
+
+
 
 function App() {
-  return (
-    <div className="h-screen relative w-full">
-      <img src='./back-sky.webp' className='h-full w-full object-cover' />
-      <h1 className='text-4xl md:text-6xl  font-medium lg:text-8xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4'>
-        ⚠️  SITE UNDER CONSTRUCTION
-      </h1>
-    </div>
-  )
+  return <>
+  <CountdownTimer/>
+    <Hero />
+    <TechDay1 />
+    <TechDay2 />
+    <ImageCarousel/>
+    <FuzzyOverlayExample/>
+   <Workshops/>
+   <Gallery/>
+   <Footer/>
+  </>
 }
 
 export default App
