@@ -38,17 +38,10 @@ const RegisterButton = () => {
 
     return (
         <div className="flex justify-center">
-<<<<<<< HEAD
             <button
                 className="absolute inline-block sm:w-36 w-28 h-[2.7em] mx-auto group dark:bg-black bg-white dark:border-white border-black border-2 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
                 onClick={() => setIsOpen(true)}
             >
-=======
-            <a
-                href="https://forms.gle/Cwo2U5mxeE9TrpPi7"
-                target="_blank"
-                className="absolute inline-block sm:w-36 w-28 h-[2.7em] mx-auto group dark:bg-black bg-white dark:border-white border-black border-2 rounded-lg">
->>>>>>> 5f4322f10868bb1eda62615f2a5f8d838836cfc8
                 <div className="absolute w-[112.81%] h-[128.57%] top-[8.57%] left-1/2 -translate-x-1/2 filter blur-[19px] opacity-70">
                     <span className="absolute inset-0 rounded-lg bg-[#d9d9d9] filter blur-[6.5px]"></span>
                     <div className="relative w-full h-full overflow-hidden rounded-lg">
