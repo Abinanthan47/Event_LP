@@ -26,7 +26,8 @@ body {
   font-weight: normal;
 }
 
-p ,a{
+p,
+a {
   font-family: "MonumentExtended", "sans-serif";
   font-weight: 300;
 }
@@ -123,5 +124,23 @@ p ,a{
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Custom scrollbar styles for the sidebar */
+  ::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: black/80; /* Background of the scrollbar track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: red; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-foreground); /* Color on hover */
   }
 }

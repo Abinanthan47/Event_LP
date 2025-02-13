@@ -1,9 +1,8 @@
-import { Separator } from "@radix-ui/react-separator";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const faqQuestions = [
     "Guru   -  9842974390",
-    "Kapil  -  9751707081",
+    "Kapil  -  9751607081",
     "Sridhar - 6383722463",
     "Thanveer - 9092206987",
 
@@ -61,10 +60,18 @@ const Footer = () => {
 
                 {/* Social Icons */}
                 <div className="flex space-x-4">
-                    <FaFacebookF className="text-red-500 text-xl cursor-pointer" />
-                    <FaInstagram className="text-red-500 text-xl cursor-pointer" />
-                    <FaYoutube className="text-red-500 text-xl cursor-pointer" />
-                    <FaLinkedinIn className="text-red-500 text-xl cursor-pointer" />
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <FaFacebookF className="text-red-500 text-xl cursor-pointer" />
+                    </a>
+                    <a href="https://www.instagram.com/ece_sona_?igsh=NmFmMGsyOHNiOTZ4" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className="text-red-500 text-xl cursor-pointer" />
+                    </a>
+                    <a href="https://www.youtube.com/user/sonatech" target="_blank" rel="noopener noreferrer">
+                        <FaYoutube className="text-red-500 text-xl cursor-pointer" />
+                    </a>
+                    <a href="https://in.linkedin.com/in/sonaece-department-78b002326?trk=public_post_feed-actor-name" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedinIn className="text-red-500 text-xl cursor-pointer" />
+                    </a>
                 </div>
 
                 {/* Footer Links */}

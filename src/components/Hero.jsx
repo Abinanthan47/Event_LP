@@ -1,10 +1,9 @@
 import RegisterButton from './RegisterButton'
-import RegisterButton2 from './RegisterButton2'
 
 function Hero() {
   return (
     <div className="h-screen bg-black relative w-full">
- 
+
       <video src='./bg-video.webm' className='h-full w-full object-cover' autoPlay muted loop />
       <img
         src='./noise-2.gif'
@@ -12,7 +11,7 @@ function Hero() {
       />
 
 
-      <h1 className=' md:hidden w-full font-monument text-[36px] md:text-6xl font-bold leading-9 text-white mix-blend-difference mb-8 absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
+      <h1 className=' md:hidden w-full font-monument text-[36px] md:text-6xl lg:text-7xl font-bold leading-9 text-white mix-blend-difference mb-8 absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
         <p className='text-sm uppercase tracking-widest  text-white text-center mb-4'>
           Department of ECE
         </p>
@@ -22,7 +21,7 @@ function Hero() {
         </h3>
       </h1>
 
-      <h1 className='hidden md:block font-monument text-[24px] md:text-6xl font-bold leading-7 md:leading-19 lg:text-[80px] text-white mix-blend-difference mb-8 absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
+      <h1 className='hidden md:block font-monument text-[24px] md:text-6xl lg:text-7xl font-bold leading-7 md:leading-19 lg:text-[80px] text-white mix-blend-difference mb-8 absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
         <p className='text-sm font-light uppercase tracking-widest  text-white text-center mb-2'>
           Department of Electronics & Communication engineering
         </p>
@@ -36,7 +35,7 @@ function Hero() {
       <div className='absolute top-[55%]  md:top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-8'>
         <RegisterButton />
       </div>
-  
+
     </div>
   )
 }
