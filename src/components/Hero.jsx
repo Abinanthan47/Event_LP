@@ -32,7 +32,7 @@ function Hero() {
           </h3>
         </div>
       </h1>
-      <div className='absolute top-[60%]  md:top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-8'>
+      <div className='absolute top-[60%]  md:top-[62%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-8'>
         <RegisterButton />
       </div>
 
