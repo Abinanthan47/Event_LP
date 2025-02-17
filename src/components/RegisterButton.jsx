@@ -79,7 +79,7 @@ const RegisterButton = () => {
                         <DrawerTitle className='text-lg font-medium tracking-wide text-center mb-5'>Register For</DrawerTitle>
                         <DrawerDescription className="flex gap-8 items-center justify-center">
                             <Button className="px-8 py-2 rounded-lg bg-gradient-to-b from-purple-500 to-purple-800 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-                                <a href="https://forms.gle/Cwo2U5mxeE9TrpPi7">Fractals</a>
+                                <a href="https://forms.gle/Cwo2U5mxeE9TrpPi7">Fractals <br/> (Day 1 )</a>
                             </Button>
                             <Button className="px-8 py-2 rounded-lg bg-gradient-to-b from-purple-500 to-purple-800 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
                                 <a href="https://forms.gle/1W5ufXvWLzyfWcPt6">I`venor</a>
