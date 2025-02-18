@@ -76,7 +76,7 @@ const RegisterButton = () => {
             </button>
             <Drawer open={isOpen} onOpenChange={setIsOpen}>
                 <DrawerTrigger />
-                <DrawerContent className=" fixed bottom-0 left-0  right-0 bg-black/80 p-6 text-white h-[120vh]  overflow-y-auto rounded-t-lg">
+                <DrawerContent className=" sticky bottom-0 left-0  right-0 bg-black/80 p-6 text-white h-[120vh]  overflow-y-auto rounded-t-lg">
     <DrawerHeader className="text-center relative">
         <DrawerTitle className="text-2xl font-medium text-center tracking-wide mb-8">
             <h1>Register for <p className='text-[12px] text-gray-300 mt-2'>(Click Below Buttons to register)</p></h1>
