@@ -32,6 +32,7 @@ const COLORS = {
     color16: '#290ECB',
     color17: '#3F4CC0',
 };
+
 const RegisterButton = () => {
     const [isHovered, setIsHovered] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -56,8 +57,8 @@ const RegisterButton = () => {
                     {[1, 2, 3, 4, 5].map((i) => (
                         <span
                             key={i}
-                            className={`absolute inset-0 rounded-lg border-solid border-[3px] border-gradient-to-b from-transparent to-white mix-blend-overlay filter ${i <= 2 ? 'blur-[3px]' : i === 3 ? 'blur-[5px]' : 'blur-[4px]'
-                                }`}></span>
+                            className={`absolute inset-0 rounded-lg border-solid border-[3px] border-gradient-to-b from-transparent to-white mix-blend-overlay filter ${i <= 2 ? 'blur-[3px]' : i === 3 ? 'blur-[5px]' : 'blur-[4px]'}`}
+                        ></span>
                     ))}
                     <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] w-[70.8%] h-[42.85%] rounded-lg filter blur-[15px] bg-[#006]"></span>
                 </div>
@@ -66,7 +67,8 @@ const RegisterButton = () => {
                     aria-label="Register"
                     type="button"
                     onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}>
+                    onMouseLeave={() => setIsHovered(false)}
+                >
                     <span className="flex items-center justify-center rounded-lg group-hover:text-yellow-400 text-white text-lg sm:text-xl font-semibold tracking-wide whitespace-nowrap">
                         <span className="inline-block font-light text-sm">Register</span>
                     </span>
@@ -74,24 +76,70 @@ const RegisterButton = () => {
             </button>
             <Drawer open={isOpen} onOpenChange={setIsOpen}>
                 <DrawerTrigger />
-                <DrawerContent className="bg-black/80 p-12 text-white flex items-center justify-center">
-                    <DrawerHeader>
-                        <DrawerTitle className='text-lg font-medium tracking-wide text-center mb-5'>Register For</DrawerTitle>
-                        <DrawerDescription className="flex gap-8 items-center justify-center">
-                            <Button className="px-8 py-6 rounded-lg bg-gradient-to-b from-purple-500 to-purple-800 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-                                <a href="https://forms.gle/Cwo2U5mxeE9TrpPi7">Fractals <br/> (Day 1)</a>
-                            </Button>
-                            <Button className="px-8 py-6 rounded-lg bg-gradient-to-b from-purple-500 to-purple-800 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-                                <a href="https://forms.gle/1W5ufXvWLzyfWcPt6">I`venor <br/> (Day 2)</a>
-                            </Button>
-                        </DrawerDescription>
-                    </DrawerHeader>
-                    <DrawerFooter>
-                        <DrawerClose onClick={() => setIsOpen(false)} />
-                    </DrawerFooter>
-                </DrawerContent>
+                <DrawerContent className=" sticky bottom-0 left-0 z-[1000] right-0 bg-black/80 p-6 text-white  overflow-y-auto rounded-t-lg">
+    <DrawerHeader className="text-center relative">
+        <DrawerTitle className="text-2xl font-medium text-center tracking-wide mb-8">
+            <h1>Register for <p className='text-[12px] text-gray-300 mt-2'>(Click Below Buttons to register)</p></h1>
+        </DrawerTitle>
+        
+        {/* Close Button (More Visible) */}
+        <button 
+            className="absolute right-4 top-4 text-white text-xl" 
+            onClick={() => setIsOpen(false)}
+        >
+            ✖
+        </button>
+
+        <DrawerDescription className="grid grid-cols-1 md:grid-cols-2  gap-8 max-w-4xl mx-auto">
+            {/* Day 1 Registration Card */}
+            <div className="flex flex-col items-center h-full">
+                <Button className="w-48 h-14 md:h-20 rounded-lg bg-gradient-to-b from-purple-700 to-purple-950 text-white border-2 border-purple-400 focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                    <a href="https://forms.gle/Cwo2U5mxeE9TrpPi7" className="text-center">
+                        Fractals<br />(Day 1)
+                    </a>
+                </Button>
+                <div className="w-full mt-4 p-6 border-2 h-[340px] rounded-2xl">
+                    <h2 className="text-lg font-medium text-center mb-4">Fractals (Day 1) Events</h2>
+                    <ul className="text-sm text-gray-300 text-start space-y-2 list-disc pl-4">
+                        <li>Paper Presentation</li>
+                        <li>Project Spotlight</li>
+                        <li>Robo Race</li>  
+                        <li>Tech Quiz</li>
+                        <li>Full Stack Dev Workshop</li>
+                        <li>VLSI Workshop</li>
+                    </ul>
+                </div>
+            </div>
+
+            {/* Day 2 Registration Card */}
+            <div className="flex flex-col items-center h-full">
+                <Button className="w-48 h-14 md:h-20 rounded-lg bg-gradient-to-b from-purple-700 to-purple-950 text-white border-2 border-purple-400 focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                    <a href="https://forms.gle/1W5ufXvWLzyfWcPt6" className="text-center">
+                        I`venor<br />(Day 2)
+                    </a>
+                </Button>
+                <div className="w-full mt-4 p-6 border-2 rounded-2xl    ">
+                    <h2 className="text-lg font-medium text-center mb-4">I`venor (Day 2) Events</h2>
+                    <ul className="text-sm text-start h-full text-gray-300 space-y-2 list-disc pl-4">
+                        <li>Idea Presentation</li>
+                        <li>Tech Charades (Quiz)</li>
+                        <li>Line Follower</li>
+                        <li>Tech Debate</li>
+                        <li>IPL Auction</li>
+                        <li>Among Us</li>
+                        <li>Connections</li>
+                        <li>Machine Learning Workshop</li>
+                        <li>MATLAB Workshop</li>
+                    </ul>
+                </div>
+            </div>
+        </DrawerDescription>
+    </DrawerHeader>
+</DrawerContent>
+
             </Drawer>
         </div>
     );
 };
+
 export default RegisterButton;
