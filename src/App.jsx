@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react"
+
 import CountdownTimer from "./components/CountdownTimer"
 import Footer from "./components/Footer"
 import Gallery from "./components/Gallery"
@@ -11,7 +11,7 @@ import Workshops from "./components/WorkShop"
 
 function App() {
   return <>
-    <Analytics />
+    
     <CountdownTimer />
     <Hero />
     <TechDay1 />
